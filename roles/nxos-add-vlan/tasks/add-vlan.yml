@@ -1,0 +1,21 @@
+---
+- name: Add VLANs to vdc INSIDE
+  nxos_vlan:
+    provider: "{{cli}}"
+    vlan_id: "{{item.id}}" 
+    name:    "{{item.name}}"
+    state:   "present"
+    admin_state: "up"
+  with_items: "{{vlans}}"
+  when: item.zone == "APP"
+
+
+- name: Add VLANs to vdc Outside
+  nxos_vlan:
+    provider: "{{cli}}"
+    vlan_id: "{{item.id}}" 
+    name:    "{{item.name}}"
+    state:   "present"
+    admin_state: "up"
+  with_items: "{{vlans}}"
+  when: item.zone == "PUB"

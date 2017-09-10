@@ -1,0 +1,5 @@
+---
+- name: Print vlans
+  debug:
+    msg: "Vlany to {{vlans | to_json}}"
+
