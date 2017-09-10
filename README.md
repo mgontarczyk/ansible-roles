@@ -1,4 +1,13 @@
-Tests for roles in ansible.
+Tests of roles in ansible.
+==========================
 
-Network
-=======
+Network:
+--------
+
+Roles for:
+* nxos - create vlan
+* ios
+* asa
+* f5
+
+
