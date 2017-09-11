@@ -1,0 +1,36 @@
+---
+vlans:
+ - id: 88
+   name: Test_88
+   zone: APP
+   type: INSIDE
+
+ - id: 99
+   name: Test_99 
+   zone: APP
+   type: INSIDE
+
+ - id: 77
+   name: Test_99 
+   zone: APP
+   type: OUTSIDE
+
+ - id: 98
+   name: Test_99 
+   zone: PUB
+   type: INSIDE
+
+ - id: 100
+   name: Test_100 
+   zone: PUB
+   type: INSIDE
+
+ - id: 101
+   name: Test_101 
+   zone: PUB
+   type: INSIDE
+
+ports:
+  - portnumber: Eth3/2
+    name: TESTSERVER02
+    owner: IT
